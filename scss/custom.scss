@@ -1,0 +1,101 @@
+$pro: gold;
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imges/macc.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.blr{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    
+    
+    a{
+        border-radius: 0px;
+        text-align: center;
+    }
+    
+    @media all and(max-width: 576px){
+        h2{
+            font-size: 60px;
+        }
+        p{
+            font-size: 20px;
+        }
+        a{
+            font-size: 16px;
+        }
+    }
+    
+}
+
+.team{
+    
+    @media all and(max-width: 1058px){
+        
+        .team-box{
+            ul{
+                text-align: center;
+                li{ 
+                    
+                    a{
+                        i{
+                            font-size: 20px ;
+                        }  
+                    }  
+                }
+            }
+        }
+    }
+    
+    
+    hr{
+        width: 150px;
+        border: none;
+        height: 3px;
+        background-color: teal;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            transition: .6s;
+            display: inline-block;
+            &:hover{
+                        color: black;
+                        font-size: 26px;
+                    }
+            .fa{
+               
+                    
+            }
+            
+            a{
+                
+                text-decoration: none;
+                box-shadow: 0 5px 4px rgba(0,0,0,.5);
+                &:hover{
+                    background-color: orange;
+                }
+                
+                
+                
+                i{
+                    font-size: 26px;
+                    border-radius: 50%;
+                    border: 1px solid $pro;
+                    padding: 15px;
+                    display: table;
+                    
+                    
+                    
+                }
+            }
+        }
+    
+    }
+}
